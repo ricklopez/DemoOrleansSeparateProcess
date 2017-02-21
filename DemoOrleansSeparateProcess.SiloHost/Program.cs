@@ -1,4 +1,6 @@
 using System;
+using DemoOrleansSeparateProcess.Interfaces;
+using Orleans;
 using Orleans.Runtime.Configuration;
 
 namespace DemoOrleansSeparateProcess.SiloHost
@@ -12,6 +14,7 @@ namespace DemoOrleansSeparateProcess.SiloHost
         static int Main(string[] args)
         {
             int exitCode = StartSilo(args);
+         
 
             Console.WriteLine("Press Enter to terminate...");
             Console.ReadLine();
